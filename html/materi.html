@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/project_perangkat_lunak/css/stylemateri.css">
+    <link rel="stylesheet" href="/project_perangkat_lunak/fontawesome/css/all.css" class="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" charset="UTF-8"></script>
+    <script src="/project_perangkat_lunak/js/materi.js"></script>
+    <title>MATERI</title>
+</head>
+<body>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <header><b>DAFTAR ISI</b></header>
+
+        <div class="scrollbox">
+            <div class="scrollbox-inner">
+                <ul>
+                    <li><a href="#navtujuan"><i class="fa-solid fa-chalkboard-user"></i>Tujuan Pembelajaran</a></li>
+                    <li><a href="#navapersepsi"><i class="fa-regular fa-lightbulb"></i>Apersepsi</a></li>
+                    <li><a href="#gametogenesis"><i class="fa-brands fa-react"></i></i>Gametogenesis</a></li>
+                    <li class="dropdown-btn" onclick="ftampil()"><a href="Materi1.html" class="pilihan"><i class="fa-solid fa-paw"></i>Gametogenesis Pada Hewan<i class="arrow down"></i></a></li>
+                            <div class="dropdown-containerr">
+                                <ol type="a">
+                                <li><a href="#spermatogenesis">a. Spermatogenesis</a></li>
+                                <li><a href="#oogenesis">b. Oogenesis</a></li>
+                            </ol>
+                            </div>
+
+                    <li class="dropdown-btn" onclick="ftampil()"><a href="Materi1.html"><i class="fa-solid fa-seedling"></i>Gametogenesis Pada Tumbuhan<i class="arrow down"></i></a></li>
+                        <div class="dropdown-containerr">
+                            <ol type="a">
+                                <li><a href="#mikrosporogenesis">a. Mikrosporogenesis</a></li>
+                                <li><a href="#makrosporogenesis">b. Makrosporogensis (Megasporogenesis)</a></li>
+                            </ol>
+                        </div>
+
+                        <li class="dropdown-btn" onclick="ftampil()"><a href="Materi2.html"><i class="fa-solid fa-virus"></i>Keterkaitan Meiosis dengan Fertilisasi Makhluk Hidup<i class="arrow down"></i></a></li>
+                        <div class="dropdown-containerr">
+                            <ol type="a">
+                                <li><a href="#mikrosporogenesis">a. Pemilahan Kromosom secara Independen</a></li>
+                                <li><a href="#makrosporogenesis">b. Pindah Silang</a></li>
+                                <li><a href="#makrosporogenesis">b. Fertilasi Random</a></li>
+                            </ol>
+                        </div>
+
+                    <li><a href="Rangkuman.html"><i class="fa-regular fa-rectangle-list"></i>Rangkuman</a></li>
+                    <li><a href="evaluasi.html"><i class="fa-solid fa-puzzle-piece"></i>Evaluasi</a></li>
+                    <li><a href="/project_perangkat_lunak/index.html"><i class="fa-solid fa-door-open"></i>Home</a></li>
+                </ul>
+            </div>
+        </div>   
+    </div>
+    
+    <section>
+        <div id="header"></div>
+        
+        <div id="content">
+            <!-- TUJUAN PEMBELAJARAN -->
+            <div class="kliktujuan" id="navtujuan"><a href="#navtujuan" onclick="tujuan('tujuan')">Tujuan Pembelajaran<br></a></div>
+            <div class="tujuan" id="tujuan"> Setelah mempelajari topik ini, siswa diharapkan :
+                    <ol style="list-style-type: decimal;">
+                        <li>Menganalisis proses pembentukan gamet (Gametogenesis) sebagai dasar penurunan sifat dari induk kepada keturunan nya.</li>
+                    </ol>
+            </div>
+
+            <!-- APERSEPSI -->
+            <br>
+            <div class="klikapersepsi" id="navapersepsi"><a href="#navapersepsi" onclick="apersepsi('apersepsi')"> Apersepsi<br></a></div>
+            <div class="apersepsi" id="apersepsi">
+                <p style="margin:10px 10px 10px 10px; text-align: justify; min-height: fit-content;">&emsp;&emsp;Gametogenesis adalah sebuah proses pembentukan sel gamet, yang meliputi gamet jantan maupun gamet betina. 
+                    Sel gamet sendiri dikenal dengan sel kelamin, yang nantinya digunakan dalam proses perkembangbiakan makhluk hidup.
+                    Pada dasarnya, gametogenesis pada manusia dan hewan memiliki kesamaan yang dilihat dari prosesnya. 
+                    Proses ini dibedakan menjadi dua macam, yaitu spermatogenesis dan oogenesis. Spermatogenesis merupakan pembentukan 
+                    spermatozoa pada kelenjar kelamin jantan/testis. Sementara itu, oogenesis adalah proses pembentukan sel telur/ovum 
+                    pada kelenjar kelamin betina/ovarium. Gametogenesis pada tumbuhan dapat terjadi di kepala sari untuk menghasilkan 
+                    gamet jantan (mikrosporogenesis), dan di putik atau bakal buah untuk menghasilkan gamet betina (megasporogenesis).
+                    Untuk lebih memahami proses pembentukan sel gamet, simak pembahasan tentang gametogenesis di bawah ini, yang dibagi 
+                    menjadi gametogenesis pada manusia dan hewan, serta gametogenesis pada tumbuhan. 
+                </p>
+            </div>
+            
+            <!-- MATERI PEMBELAJARAN -->
+            <br>
+            <div class="materi">
+
+                <h3 id="gametogenesis" style="text-align: justify;">Gametogenesis</h3>
+                <p>&emsp;&emsp;Gametogenesis adalah proses pembentukan gamet atau sel kelamin di dalam alat perkembangbiakan. Gametogenesis terjadi pada organisme dewasa, baik pada manusia, hewan, maupun tumbuhan. Gametogenesis pada hewan sama dengan gametogenesis pada manusia.</p>
+                <br>
+                <center><iframe width="760" height="400" src="https://www.youtube.com/embed/DJwoJ4cRsZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+            </div>
+        
+            <br>
+            </div> 
+            
+        </div>
+        <nav>
+            <center style="margin-top: 10px;">
+                <a href="Materi1.html" class="tombol">Selanjutnya</a>
+            </center>
+        </nav>
+    </section>
+
+    
+</body>
+</html>

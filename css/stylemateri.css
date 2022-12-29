@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,400&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#header{  
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 60px;
+    float: center;
+	display: inline-flex;       
+}
+
+.sidebar {
+    position: fixed;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    background: #90B77D;
+    transition: all .5s ease;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(138, 138, 138);
+}
+
+.scrollbox {
+    overflow: auto;
+    visibility: hidden;
+}
+
+.scrollbox-inner, 
+.scrollbox:hover {
+    visibility: visible;
+}
+
+.scrollbox-inner ul{
+    overflow: auto;
+    height: 600px;
+    width: 100%;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    background: #42855B;
+    user-select: none;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 60px;
+    width: 100%;
+    /* line-height: 45px; */
+    font-size: 15px;
+    color: rgb(2, 41, 2);
+    padding-left: 20px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    border-bottom: 0.1px solid rgb(255, 255, 255);
+    /* border-top: 0.1px solid rgba(0, 0, 0, 0.1); */
+    transition: .4s;
+}
+
+ul li:hover a{
+    padding-left: 40px;
+    background-color:#42855B;
+    color:#fff
+}
+
+.sidebar ul a i{
+    margin-right: 16px;
+}
+    
+.sidebar .tmblAktif{
+    background-color:#55C9EE;
+    color:#000
+}
+
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+    position: absolute;
+    background: #42855B;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+label #btn{
+    left: 325px;
+    top: 10px;
+    font-size: 35px;
+    color: white;
+    padding: 4px 9px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: 250px;
+    top: 10px;
+    font-size: 30px;
+    color: #FFFFFF;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+    left: -300px;
+}
+
+#check:checked ~ label #btn{
+    left: 40px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#check:checked ~ label #cancel{
+    left: -200px;
+}
+
+#check:checked ~ section{
+    margin-left: 0px;
+}
+
+section{
+    background: url(/project_perangkat_lunak/img/pembelahan_sel.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+    margin-left: 300px;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+    
+.dropdown-containerr {
+    display: none;
+    padding-left: 8px;
+}
+
+.arrow {
+    border: 2px groove white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 1px;
+    margin-left: 20px;
+}
+    
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#content{
+    background-color: white;
+    min-height: 520px;
+    overflow: scroll;
+    width: 96%;
+	margin-left: 1%;
+    height: 0px;
+    text-align: left;
+    padding: 5px;
+    border: 5px solid #ffffff;
+    border-radius:10px;
+}
+
+.tujuan {
+    width:95%;
+    min-height:10px;
+    border: 5px groove #90B77D; 
+    border-radius:10px;
+    margin:0 10px 0 10px;
+    background-color:#e3fcd7;
+    display:block;
+    padding:10px 0 0 10px;
+}
+
+.hilang{
+    display:none;
+}
+        
+.tujuan li{
+    margin-left:35px;
+    margin-top:10px;
+    margin-right:25px;
+    margin-bottom:10px
+}
+
+.kliktujuan{
+    margin-bottom:5px;
+    background-color:#90B77D;
+    padding:5px 13px;
+    border-radius:5px;
+    width:fit-content
+}
+    
+.kliktujuan a{
+    text-decoration:none;
+    color: white
+}
+
+.apersepsi {
+    width:100%;
+    background-color:#FFFFFF;
+    display:block;
+}
+                
+.lost{
+    display:none;
+}
+                
+.apersepsi li{
+    margin-left:35px;
+    margin-top:10px;
+    margin-right:25px;
+    margin-bottom:10px
+}
+                
+.klikapersepsi{
+    margin-bottom:5px;
+    background-color:#90B77D;
+    padding:5px 13px;
+    border-radius:5px;
+    width: fit-content
+}
+            
+.klikapersepsi a{
+    text-decoration:none;
+    color: white
+}
+
+.latihan{
+    margin-left:35px;
+    margin-top:10px;
+    margin-right:25px;
+    margin-bottom:10px
+}
+
+.kliklatihan{
+    margin-bottom:5px;
+    background-color:#90B77D;
+    padding:5px 13px;
+    border-radius:5px;
+    width:fit-content
+}
+    
+.kliklatihan a{
+    text-decoration:none;
+    color: white
+}
+
+.materi {      
+    min-height: fit-content;
+    width:97%;
+    text-align: justify;
+    margin:10px 0 0 10px;
+}
+
+#kiri{
+    width: 35%;
+    min-height:100px;
+    float:left;
+    text-align: justify;
+    margin-left: 10px;
+    border: 5px groove rgb(208, 223, 255); 
+    border-radius:10px;
+    margin:0 10px 0 0;
+	
+}
+#kanan{
+    width: 62%;
+    float: right;
+    text-align: center;
+    padding-top: 10px;
+	height: fit-content;
+    
+}
+
+#kiri2{
+    width: 50%;
+	height: fit-content;
+    float:left;
+    text-align: center;
+    margin-left: 0px;
+    padding-top: 10px;
+}
+
+#kanan2{
+    width: 50%;
+	height: fit-content;
+    float: right;
+    text-align: justify;
+    
+   
+}
+
+.nav a{
+    display: inline-block;
+    padding: 10px 13px;
+    font-size: 18px;
+}
+
+.tombol{
+    
+    background-color: white;
+    
+    border-radius: 5px;
+    color: #42855B;
+    padding: 1px 5px 1px 5px;
+
+}
+
+.rangkuman {
+    width:96%;
+    min-height:10px;
+    border: 5px groove #90B77D; 
+    border-radius:10px;
+    margin:0 10px 10px 10px;
+    background-color:#e3fcd7;
+    display:block;
+    padding:10px 10px 10px 10px;
+}
+
+/* 
+
+.kliktts{
+    margin-bottom:5px;
+    background-color:#90B77D;
+    padding:5px 13px;
+    border-radius:5px;
+    width:fit-content
+}
+
+.kliktts a{
+    text-decoration:none;
+    color: white
+}
+
+table{
+    text-align: center;
+}
+
+td {
+	width: 33px;
+	height: 33px;
+}
+
+td input {
+	width: 33px;
+	height: 33px;
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.block {
+        background-color: #90B77D;
+} */

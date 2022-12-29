@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/project_perangkat_lunak/css/stylemateri.css">
+    <link rel="stylesheet" href="/project_perangkat_lunak/fontawesome/css/all.css" class="stylesheet">
+    <script src="/project_perangkat_lunak/js/materi.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <header><b>DAFTAR ISI</b></header>
+
+        <div class="scrollbox">
+            <div class="scrollbox-inner">
+                <ul>
+                    <li><a href="materi.html"><i class="fa-solid fa-chalkboard-user"></i>Tujuan Pembelajaran</a></li>
+                    <li><a href="materi.html"><i class="fa-regular fa-lightbulb"></i>Apersepsi</a></li>
+                    <li><a href="materi.html"><i class="fa-brands fa-react"></i></i>Gametogenesis</a></li>
+                    <li class="dropdown-btn" onclick="ftampil()"><a href="Materi1.html"><i class="fa-solid fa-paw"></i>Gametogenesis Pada Hewan<i class="arrow down"></i></a></li>
+                            <div class="dropdown-containerr">
+                                <ol type="a">
+                                <li><a href="#spermatogenesis">a. Spermatogenesis</a></li>
+                                <li><a href="#oogenesis">b. Oogenesis</a></li>
+                            </ol>
+                            </div>
+
+                    <li class="dropdown-btn" onclick="ftampil()"><a href="Materi1.html"><i class="fa-solid fa-seedling"></i>Gametogenesis Pada Tumbuhan<i class="arrow down"></i></a></li>
+                        <div class="dropdown-containerr">
+                            <ol type="a">
+                                <li><a href="#mikrosporogenesis">a. Mikrosporogenesis</a></li>
+                                <li><a href="#makrosporogenesis">b. Makrosporogensis (Megasporogenesis)</a></li>
+                            </ol>
+                        </div>
+
+                        <li class="dropdown-btn" onclick="ftampil()"><a href="Materi2.html"><i class="fa-solid fa-virus"></i>Keterkaitan Meiosis dengan Fertilisasi Makhluk Hidup<i class="arrow down"></i></a></li>
+                        <div class="dropdown-containerr">
+                            <ol type="a">
+                                <li><a href="#pemilahanKro">a. Pemilahan Kromosom secara Independen</a></li>
+                                <li><a href="#PindahSilang">b. Pindah Silang</a></li>
+                                <li><a href="#Fertilasi">c. Fertilasi Random</a></li>
+                                <li><a href="#navlatihan">Latihan 2</a></li>
+                            </ol>
+                        </div>
+
+                    <li><a href="Rangkuman.html"><i class="fa-regular fa-rectangle-list"></i>Rangkuman</a></li>
+                    <li><a href="evaluasi.html"><i class="fa-solid fa-puzzle-piece"></i>Evaluasi</a></li>
+                    <li><a href="/project_perangkat_lunak/index.html"><i class="fa-solid fa-door-open"></i>Home</a></li>
+                </ul>
+            </div>
+        </div>   
+    </div>
+    
+    <section>
+        <div id="header"></div>
+        <div id="content">
+            <div class="materi">
+                <div class="rangkuman">
+                    <h3 id="rangkuman" style="text-align: center;">Rangkuman</h3>
+                    <ol type="1">
+                        <li> Gametogenesis adalah proses pembentukan gamet yang mencakup peristiwa pembelahan meiosis I dan meiosis II, diikuti dengan pemasakan sel haploid menjadi sel gamet.</li>
+                        <li> Gametogenesis pada hewan jantan disebut dengan spermatogenesis. Spermatogenesis menghasilkan empat sperma yang haploid. Gametogenesis pada hewan betina disebut oogenesis. Oogenesis menghasilkan satu ovum yang bersifat haploid dan fertil serta tiga badan kutub polar yang steril.</li>
+                        <li> Gametogenesis pada tumbuhan tingkat tinggi terbagi menjadi mikrosporogenesis untuk tumbuhan jantan dan megasporogenesis pada tumbuhan betina. Mikrosporogenesis menghasilkan empat mikrospora yang haploid yang selanjutnya 2 mikrospora berfusi menjadi intivegetatif dan 2 mikrospora menjadi inti generatif 1 dan inti generatif.                  
+                             Megasporogenesis menghasilkan delapan megaspora yang haploid yang selanjutnya menjadi 3 inti antipoda, 2 inti melebur menjadi inti kandung lembaga sekunder, dan 2 inti sinergida, dan 1 inti ovum.</li>
+                        <li> Fertilisasi memulihkan kembali kondisi diploid dan siklus hidup manusia berulang kembali dari generasi ke generasi. Perilaku kromosom selama berlangsung pembelahan meiosis dan fertilisasi dapat mengakibatkan terjadinya berbagai variasi genetik. </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <center style="margin-top: 10px;">
+                <a href="Materi2.html" class="tombol">Sebelumnya</a>
+            </center>
+        </nav>
+    </section>
+</body>
+</html>
