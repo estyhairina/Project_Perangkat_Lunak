@@ -17,7 +17,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/project_perangkat_lunak/img/pembelahan_sel.jpg");
+    background-image: url("/img/pembelahan_sel.jpg");
     background-size: cover;
 }
 
